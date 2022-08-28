@@ -409,9 +409,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <h3 class="footer-form-title">Підпишіться на розсилку</h3>
+          <form action="footer-online-form">
+            <input
+              type="email"
+              class="footer-online-input"
+              name="footer-form-email"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-form-button">
+              Підписатися
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./img/team-icons.svg#icon-footer-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="" height="">
@@ -491,14 +509,20 @@
               type="checkbox"
               name="user-policy"
               value="true"
-              class="input-check"
+              class="input-check visually-hidden"
               id="user-policy"
             />
-            <label for="user-policy" class="check-text"
-              >Погоджуюся з розсилкою та приймаю Умови договору</label
-            >
+            <label for="user-policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./img/modal-input-icons.svg#icon-modal-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="./index.html" class="policy-agreenent-conditions">Умови договору</a>
+            </label>
           </div>
-          <button type="submit">Відправити</button>
+          <button type="submit" class="modal-button">Відправити</button>
         </form>
       </div>
     </div>
