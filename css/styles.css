@@ -681,6 +681,7 @@ img {
   font-weight: 400;
   background-color: transparent;
   outline: none;
+  color: #acacb0;
 }
 
 .footer-online-input:focus {
@@ -696,6 +697,9 @@ img {
 }
 
 .footer-form-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -713,6 +717,7 @@ img {
 
 .footer-form-icon {
   fill: #ffffff;
+  margin-left: 10px;
 }
 
 /* ---------MODAL--------- */
@@ -758,6 +763,10 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
+}
+
+.modal-close-icon:hover {
+  fill: #2196f3;
 }
 
 .modal-title {
